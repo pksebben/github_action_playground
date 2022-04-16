@@ -22,3 +22,5 @@ jobs:
       SECRET_THREE: ${{ secrets.TEST_SCRET_3 }}
     steps:
       - run: env | grep SECRET
+      - run: echo "test secret one passes check"
+        if: env.TEST_SECRET_1 == 'ts1reporting'
