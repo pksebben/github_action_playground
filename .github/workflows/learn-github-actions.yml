@@ -16,6 +16,7 @@ jobs:
       - run: env
   print-secrets:
     runs-on: ubuntu-latest
+    environment: default
     env:
       SECRET_ONE: ${{ secrets.TEST_SECRET_1 }}
       SECRET_TWO: ${{ secrets.SECRET_TEST_2 }}
