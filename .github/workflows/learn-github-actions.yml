@@ -23,8 +23,6 @@ jobs:
       SECRET_THREE: ${{ secrets.TEST_SCRET_3 }}
     steps:
       - run: env | grep SECRET
-        with:
-          SECRET_1: ${{ secrets.TEST_SECRET_1 }}
         env:
           SECRET_ONE: ${{ secrets.TEST_SECRET_1 }}
 
