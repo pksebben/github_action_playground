@@ -30,5 +30,3 @@ jobs:
 
       - run: echo "test secret one passes check"
         if: env.TEST_SECRET_1 == 'ts1reporting'
-        with:
-          SECRET_1: ${{ secrets.TEST_SECRET_1 }}
