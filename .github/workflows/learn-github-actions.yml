@@ -21,6 +21,8 @@ jobs:
       SECRET_ONE: ${{ secrets.TEST_SECRET_1 }}
       SECRET_TWO: ${{ secrets.SECRET_TEST_2 }}
       SECRET_THREE: ${{ secrets.TEST_SCRET_3 }}
+    with:
+      SECRET_1: ${{ secrets.TEST_SECRET_1 }}
     steps:
       - run: env | grep SECRET
       - run: echo "test secret one passes check"
